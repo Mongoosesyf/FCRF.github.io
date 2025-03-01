@@ -1,5 +1,5 @@
-title: Faithful LLMs for Long-Horizon Task Planning
+title: FCRF: Flexible Constructivism Reflection for Long-Horizon Robotic Task Planning with Large Language Models
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
-description: ICRA 2024<br/>Jiatao Zhang, Lanling Tang, Yufan Song, Qiwei Meng, Wei Song, Shiqiang Zhu1
+description: IROS 2025<br/>Yufan Song, Jiatao Zhang, Zeng Gu, Qingmiao Liang, Tuocheng Hu, Wei Song, Shiqiang Zhu

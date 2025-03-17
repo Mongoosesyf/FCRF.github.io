@@ -14,17 +14,17 @@
 Autonomous error correction is critical for domestic robots to achieve reliable execution of complex long-horizon tasks. Prior work has explored self-reflection in Large Language Models (LLMs) for task planning error correction; however, existing methods are constrained by inflexible self-reflection mechanisms that limit their effectiveness. Motivated by these limitations and inspired by human cognitive adaptation, we propose the Flexible Constructivism Reflection Framework (FCRF), a novel Mentor-Actor architecture that enables LLMs to perform flexible self-reflection based on task difficulty, while constructively integrating historical valuable experience with failure lessons. We evaluated FCRF on diverse domestic tasks through simulation in AlfWorld and physical deployment in the real-world environment. Experimental results demonstrate that FCRF significantly improves overall performance and self-reflection flexibility in complex long-horizon robotic tasks. 
 
 ## Paper
-<iframe  width="400" height="420" src="./FLTRNN_Faithful_Long_Horizon_Task_Planning_for_Robotics_with_Large_Language_Models.pdf"></iframe>
+<iframe  width="400" height="420" src="./FCRF_Flexible_Constructivism_Reflection_for_Long_Horizon_Robotic_Task_Planning_with_Large_Language_Models"></iframe>
 
 ## Video
 <iframe width="100%" height="420" src="https://www.youtube.com/embed/wRxH_F7mPKQ?si=WXvnpf3U-jjUIryt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 ## Results
-Example of our frameworks for long-horizon task planning:
+Comparison of FCRF and baseline reflection method in an AlfWorld example:
 
 <div align='center'>
-  <img src="./Exp_example_1_00.png">
+  <img src="./sim_example.pdf">
 </div>
 
 ## Methodology

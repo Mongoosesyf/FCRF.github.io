@@ -19,6 +19,14 @@ Autonomous error correction is critical for domestic robots to achieve reliable 
 ## Video
 <iframe width="100%" height="420" src="https://www.youtube.com/embed/wRxH_F7mPKQ?si=WXvnpf3U-jjUIryt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+## my_Video
+
+<div align='center'>
+  <video id="video" controls="" preload="none" poster="作者(图片地址)">
+    <source id="mp4" src="./video1.mp4" type="video/mp4">
+  </video>
+</div>
+
 
 ## Results
 Comparison of FCRF and baseline reflection method in an AlfWorld example:

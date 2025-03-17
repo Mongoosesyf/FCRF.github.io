@@ -41,47 +41,6 @@ the self-reflection process, the difficulty level of the task is first assessed,
   <img src="./fig3_00.png">
 </div>
 
-## Experiment
-
-<div style="display: flex;">
-    <div>
-          <video width="300" height="220" controls autoplay>
-            <source src="./video/Planning_only_zm.mp4"
-                    type="video/mp4">
-          </video>
-    </div>
-    <div>
-          <video width="300" height="220" controls autoplay>
-            <source src="./video/Planning-Reasonning_zm.mp4"
-                    type="video/mp4">
-          </video>
-    </div>
-    <div>
-          <video width="300" height="220" controls autoplay>
-            <source src="./video/Main_1.5_720.mp4"
-                    type="video/mp4">
-          </video>
-   </div>
-</div>
-<div style="display: flex;">
-  <pre style="text-align: center;  background-color: white; border: none;">             A.Planning-only             B.Planning-Reasonning                   C.Ours</pre>
-</div>
-
-### Real Robot Demo
-<div style="display: flex;">
-    <div>
-          <video  width="400" height="720" controls autoplay>
-            <source src="./video/prepare_drink_zm.mp4"
-                    type="video/mp4">
-          </video>
-   </div>
-   <div>
-          <video  width="400" height="720" controls autoplay>
-            <source src="./video/clean_up_table_zm.mp4"
-                    type="video/mp4">
-          </video>
-   </div>
-</div>
 
 ## Appendix
 ### A.Method

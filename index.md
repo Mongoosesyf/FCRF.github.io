@@ -50,25 +50,25 @@ the self-reflection process, the difficulty level of the task is first assessed,
 ## Appendix
 ### 1.Prompt of Valuable Experience Summary Process
 
-  You will be given the history of a past experience in which you were placed in an environment and given a task to complete. 
-  You were unsuccessful in completing the task.
-  Now by aligning the task goal, summary the valuable actions you have gained in your past experience.
-
-  Here are two examples:
-  =================The first example=====================
-  {experience[f'{v}_0']}
+    You will be given the history of a past experience in which you were placed in an environment and given a task to complete. 
+    You were unsuccessful in completing the task.
+    Now by aligning the task goal, summary the valuable actions you have gained in your past experience.
   
-  =================The second example=====================
-  {experience[f'{v}_1']}
+    Here are two examples:
+    =================The first example=====================
+    {experience[f'{v}_0']}
+    
+    =================The second example=====================
+    {experience[f'{v}_1']}
+    
+    Here is the history of the past experience and your task:
+    {scenario}
+    
+    Strictly follow the format of example, summarize the valuable actions directly in concise language, without adding your own divergent thoughts.
   
-  Here is the history of the past experience and your task:
-  {scenario}
-  
-  Strictly follow the format of example, summarize the valuable actions directly in concise language, without adding your own divergent thoughts.
-
 
 ### 2.Prompt of Failure Lesson Summary Process
-You will be given the history of a past experience in which you were placed in an environment and given a task to complete. 
+    You will be given the history of a past experience in which you were placed in an environment and given a task to complete. 
     You were unsuccessful in completing the task.
     Now to solve your mistake, I will give you a mentor lesson pool, in which listed typical constraints of your task environment.
     Analyze which tip in the mentor lesson pool might be the reason of your mistake, and then make failure lesson summarization refer to the form of examples given later. 
@@ -92,7 +92,7 @@ You will be given the history of a past experience in which you were placed in a
 
 
 ### 3.Prompt of Comprehensive Construction Process
-You will be given the history of a past experience in which you were placed in an environment and given a task to complete. 
+    You will be given the history of a past experience in which you were placed in an environment and given a task to complete. 
     You were unsuccessful in completing the task.
     Now I will give you valuable experience summarization and failure lesson summarization based on your previous experience. 
     Please create a plan for the next attempt with reference to specific actions that you should have taken, incorporating insights from these two analyses. 

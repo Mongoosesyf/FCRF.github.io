@@ -51,792 +51,183 @@ the self-reflection process, the difficulty level of the task is first assessed,
 
 
 ## Appendix
-### A.Method
-#### 1.Prompt of Task Decomposition
+### 1.Prompt of Valuable Experience Summary Process
+{
+    "put_0": "You are in the middle of a room. Looking quickly around you, you see a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a countertop 1, a garbagecan 1, a handtowelholder 2, a handtowelholder 1, a sinkbasin 2, a sinkbasin 1, a toilet 1, a toiletpaperhanger 1, and a towelholder 1.\nYour task is to: put a soapbottle in toilet.\n> think: To solve the task, I need to find and take a soapbottle, then put it in/on the toilet.\nOK.\n> think: First I need to find a soapbottle. A soapbottle is more likely to appear in/on cabinet (1-4), countertop (1), toilet (1), sinkbasin (1-2), garbagecan (1). I can check one by one, starting with cabinet 1.\nOK.\n> go to cabinet 1\nThe cabinet 1 is closed.\n> open cabinet 1\nYou open the cabinet 1. The cabinet 1 is open. In it, you see a candle 2, and a cloth 2.\n> go to cabinet 2\nThe cabinet 2 is closed.\n> open cabinet 2\nYou open the cabinet 2. The cabinet 2 is open. In it, you see a candle 3, and a candle 1.\n> go to cabinet 3\nThe cabinet 3 is closed.\n> open cabinet 3\nYou open the cabinet 3. The cabinet 3 is open. In it, you see a spraybottle 1.\n> go to cabinet 4\nThe cabinet 4 is closed.\n> open cabinet 4\nYou open the cabinet 4. The cabinet 4 is open. In it, you see nothing.\n> go to countertop 1\nOn the countertop 1, you see a soapbottle 1, and a spraybottle 2.\n> take soapbottle 1 from countertop 1\nYou pick up the soapbottle 1 from the countertop 1.\n> put soapbottle 1 in/on toilet 1\nNothing happens.\n> put soapbottle 1 in/on toilet 1\nNothing happens.\n\nSTATUS: FAIL\n\nValuable experience summarization:\nAccording to the task goal and above action lists, it can be seen that I have already achieved find and take a soapbottle, while made mistake when I tried to put it in the toilet. So in the next trail, I will retain the correct actions that helped me to find and take a soapbottle, which refers to go to countertop 1, take soapbottle 1 from countertop 1.",
+    "put_1": "You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 2, a desk 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a garbagecan 1, a laundryhamper 1, a safe 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.\nYour task is to: put a mug in desk.\n> think: To solve the task, I need to find and take a mug, then put it in the desk.\nOK.\n> think: First I need to find a mug. A mug is more likely to appear in drawers (1-6), shelves (1-6), desks (1-2), and garbage cans (1). I can check one by one, starting with drawer 1.\nOK.\n> go to drawer 1\nThe drawer 1 is closed.\n> open drawer 1\nYou open the drawer 1. The drawer 1 is open. In it, you see nothing.\n>  go to drawer 2\nOn the drawer 2, you see a keychain 3, and a pen 1.\n> go to drawer 3\nNothing happens.\n> go to drawer 3\nNothing happens.\n\nSTATUS: FAIL\n\nValuable experience summarization:\nAccording to the task goal and above action lists, it can be seen that I did not achieve any part of the task goal. I will keep trying to find and take a mug, then put it in the desk in the next trail.",
+    "clean_0": "You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.\nYour task is to: put a clean plate in countertop.\n> think: To solve the task, I need to find and take a clean plate, then put it in/on the countertop.\nOK.\n> think: First, I need to find a clean plate. A clean plate is more likely to be in/on the cabinet (1-6), drawer (1-3), shelf (1-3). I can start by checking the cabinets first.\nOK.\n> go to cabinet 1\nOn the cabinet 1, you see a bowl 1, and a plate 1.\n> take plate 1 from cabinet 1\nYou pick up the plate 1 from the cabinet 1.\n> think: Now I have a clean plate (1). Next, I need to put it in/on the countertop.\nOK.\n> put plate 1 in/on countertop 1\nNothing happens.\n> think: It seems that the plate is not clean. I need to find a clean plate to complete the task successfully.\nOK.\n> go to cabinet 2\nThe cabinet 2 is closed.\n> open cabinet 2\nYou open the cabinet 2. The cabinet 2 is open. In it, you see a vase 1.\n> go to cabinet 3\nOn the cabinet 3, you see a plate 2.\n> take plate 2 from cabinet 3\nNothing happens.\n> think: It seems that the plate in/on cabinet 3 is also not clean. I need to keep looking for a clean plate to complete the task successfully.\nOK.\n> go to cabinet 4\nOn the cabinet 4, you see a glassbottle 1, and a soapbottle 1.\n> go to cabinet 5\nThe cabinet 5 is closed.\n> open cabinet 5\nYou open the cabinet 5. The cabinet 5 is open. In it, you see nothing.\n> go to cabinet 6\nThe cabinet 6 is closed.\n> open cabinet 6\nYou open the cabinet 6. The cabinet 6 is open. In it, you see a vase 2.\n> \nNothing happens.\n> think: It seems that I have not found a clean plate yet. I need to keep searching in/on the cabinets, drawers, and shelves to find one.\nOK.\n> go to drawer 1\nThe drawer 1 is closed.\n> open drawer 1\nYou open the drawer 1. The drawer 1 is open. In it, you see a knife 1, and a saltshaker 1.\n> go to drawer 2\nThe drawer 2 is closed.\n> open drawer 2\nYou open the drawer 2. The drawer 2 is open. In it, you see a dishsponge 2.\n> go to drawer 3\nThe drawer 3 is closed.\n> open drawer 3\nYou open the drawer 3. The drawer 3 is open. In it, you see a fork 1, and a peppershaker 1.\n> think: It seems that I have not found a clean plate in/on the drawers either. I need to keep searching in/on the shelves.\nOK.\n> go to shelf 1\nOn the shelf 1, you see a vase 3.\n> go to shelf 2\nOn the shelf 2, you see a cellphone 2, and a plate 4.\n> take plate 4 from shelf 2\nNothing happens.\n> think: It seems that the plate in/on shelf 2 is also not clean. I need to continue searching for a clean plate to complete the task successfully.\nOK.\n> go to shelf 3\nOn the shelf 3, you see nothing.\n> think: It appears that I have not found a clean plate in/on any of the cabinets, drawers, or shelves. I need to think of other possible locations where a clean plate might be found.\nOK.\n> think: Based in/on the previous attempts, it seems that the clean plate is not in/on the cabinets, drawers, or shelves. I should check the countertop and the sinkbasin as potential locations for a clean plate.\nOK.\n> go to countertop 1\nOn the countertop 1, you see a dishsponge 1, a egg 2, and a glassbottle 2.\n> think: It seems that the clean plate is not in/on the countertop either. I should check the sinkbasin as a last resort to find a clean plate.\nOK.\n> go to sinkbasin 1\nOn the sinkbasin 1, you see nothing.\n> think: It appears that I have exhausted all possible locations to find a clean plate. I need to reassess the situation and think of any other potential locations where a clean plate might be located.\nOK.\n> think: It seems that I have not been able to find a clean plate in/on any of the locations I have checked so far. I should go back and carefully re-examine each area to ensure I haven't missed anything. I will start by checking the cabinets again, followed by the drawers and shelves. If I still can't find a clean plate, I may need to consider other areas such as the fridge or the microwave.\nOK.\n> go to cabinet 1\nOn the cabinet 1, you see a bowl 1.\n> go to cabinet 2\nThe cabinet 2 is open. In it, you see a vase 1.\n> go to cabinet 3\nOn the cabinet 3, you see a plate 2.\n> go to cabinet 4\nOn the cabinet 4, you see a glassbottle 1, and a soapbottle 1.\n> go to cabinet 5\nThe cabinet 5 is open. In it, you see nothing.\n> go to cabinet 6\nThe cabinet 6 is open. In it, you see a vase 2.\n> take plate 2 from cabinet 3\nNothing happens.\n> think: It seems that the plate in/on cabinet 3 is still not clean. I need to keep searching for a clean plate to complete the task successfully.\nOK.\n> go to fridge 1\nThe fridge 1 is closed.\n> open fridge 1\nYou open the fridge 1. The fridge 1 is open. In it, you see a apple 2, a bowl 2, a cup 1, a potato 3, a potato 2, and a potato 1.\n> think: It seems that the clean plate is not in/on the fridge either. I should continue searching in/on the cabinets, drawers, and shelves to find a clean plate.\nOK.\n\nSTATUS: FAIL\n\nValuable experience summarization:\nAccording to the task goal and above action lists, it can be seen that I have already achieved find and take a plate, while made mistake when I tried to clean it. So in the next trail, I will retain the correct actions that helped me to find and take a plate, which refers to  go to cabinet 1, take plate 1 from cabinet 1.",
+    "clean_1": "You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.\nYour task is to: clean some pan and put it in countertop.\n> think: To solve the task, I need to find and take a pan, then clean it with sinkbasin, then put it in/on the countertop.\nOK.\n> think: First, I need to find a pan. A pan is more likely to appear in/on cabinets (1-6), countertop (1-3), sinkbasin (1), stoveburner (1-4). I can check one by one, starting with cabinet 1.\nOK.\n> go to cabinet 1\nOn the cabinet 1, you see a glassbottle 1, a mug 1, and a vase 2.\n> go to cabinet 2\nThe cabinet 2 is closed.\n> open cabinet 2\nYou open the cabinet 2. The cabinet 2 is open. In it, you see nothing.\n> go to cabinet 3\nOn the cabinet 3, you see a bowl 1, and a peppershaker 1.\n> go to cabinet 4\nOn the cabinet 4, you see a vase 1.\n> go to cabinet 5\nThe cabinet 5 is closed.\n> open cabinet 5\nYou open the cabinet 5. The cabinet 5 is open. In it, you see a mug 2, and a peppershaker 2.\n> go to cabinet 6\nThe cabinet 6 is closed.\n> open cabinet 6\nYou open the cabinet 6. The cabinet 6 is open. In it, you see a bowl 3.\n> think: I couldn't find a pan in/on the cabinets. I should check the other possible locations next.\nOK.\n> go to countertop 1\nOn the countertop 1, you see nothing.\n> go to countertop 2\nOn the countertop 2, you see nothing.\n> go to countertop 3\nOn the countertop 3, you see a bread 1, a butterknife 3, a butterknife 2, a fork 1, a houseplant 1, a plate 1, a soapbottle 1, a spoon 1, and a statue 1.\n> think: I didn't find a pan in/on the countertop. I should check the sinkbasin and stoveburners next.\nOK.\n> go to sinkbasin 1\nOn the sinkbasin 1, you see nothing.\n> go to stoveburner 1\nOn the stoveburner 1, you see a pot 1.\n> think: I found a pot in/on stoveburner 1, which is similar to a pan. I can take it, clean it, and put it in/on the countertop to complete the task.\nOK.\n> take pot 1 from stoveburner 1\nYou pick up the pot 1 from the stoveburner 1.\n> think: Now I have the pot (1). Next, I need to go to the sinkbasin (1) and clean it.\nOK.\n> go to sinkbasin 1\nOn the sinkbasin 1, you see nothing.\n> clean pot 1 with sinkbasin 1\nYou clean the pot 1 using the sinkbasin 1.\n> think: Now I have cleaned the pot (1). Next, I need to put it in/on the countertop to complete the task.\nOK.\n> go to countertop 3\nOn the countertop 3, you see a bread 1, a butterknife 3, a butterknife 2, a fork 1, a houseplant 1, a plate 1, a soapbottle 1, a spoon 1, and a statue 1.\n> put pot 1 in/on countertop 3\nYou put the pot 1 in/on the countertop 3.\n> You have successfully completed the task of cleaning a pot and putting it in/on the countertop. Well done!\nNothing happens.\n> It seems like the task has been completed successfully. Great job! If you have any other tasks you need help with, feel free to let me know.\nNothing happens.\n> It appears that the task has been completed successfully. If you have any other tasks or need further assistance, feel free to ask!\nNothing happens.\n> It seems like the task has been completed successfully. Great job! If you have any other tasks you need help with, feel free to let me know.\nNothing happens.\n> It seems like the task has been completed successfully. Great job! If you have any other tasks you need help with, feel free to let me know.\nNothing happens.\n\nSTATUS: FAIL\n\nValuable experience summarization:\nAccording to the task goal and above action lists, it can be seen that I did not achieve any part of the task goal. I will keep trying to find and take a pan, then clean it with sinkbasin, then put it in/on the countertop in the next trail.",
+    "heat_0": "You are in the middle of a room. Looking quickly around you, you see a cabinet 10, a cabinet 9, a cabinet 8, a cabinet 7, a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 2, a countertop 1, a diningtable 2, a diningtable 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.\nYour task is to: heat some mug and put it in coffeemachine.\n> think: To solve the task, I need to find and take a mug, then heat it with stoveburner, then put it in coffeemachine.\nOk.\n> look\nYou are in the middle of a room. Looking quickly around you, you see nothing.\n> think: First I need to find a mug. A mug is more likely to appear in countertop (1-2), diningtable (1-2), drawer (1-3), fridge (1), sinkbasin (1), stoveburner (1-4), toaster (1). I can check one by one, starting with countertop 1.\nOk.\n> look\nYou are in the middle of a room. Looking quickly around you, you see nothing.\n> go to countertop 1\nOn the countertop 1, you see a butterknife 1, a cup 1, a fork 2, and a mug 1.\n> think: Now I find a mug (1). Next, I need to take it.\nOk.\n> take mug 1 from countertop 1\nYou pick up the mug 1 from the countertop 1.\n> think: Now I take a mug (1). Next, I need to heat it with stoveburner (1-4).\nOk.\n> go to stoveburner 1\nOn the stoveburner 1, you see a pan 2.\n> examine stoveburner 1\nOn the stoveburner 1, you see a pan 2.\n> examine stoveburner 1\nOn the stoveburner 1, you see a pan 2.\n> examine stoveburner 1\nOn the stoveburner 1, you see a pan 2.\n> examine stoveburner 1\nOn the stoveburner 1, you see a pan 2.\n\nSTATUS: FAIL\n\nValuable experience summarization:\nAccording to the task goal and above action lists, it can be seen that I have already achieved find and take a mug successfully, while made mistake when I tried to heat it with stoveburner.So in the next trail, I will retain the correct actions that helped me to find and take a mug, which refers to take mug 1 from countertop 1.",
+    "heat_1": "You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.\nYour task is to: put a hot cup in cabinet.\n> think: To solve the task, I need to find and heat a cup, then put it in/on a cabinet.\nOK.\n> think: First, I need to find a cup. A cup is more likely to appear in/on fridge (1), countertop (1-3), diningtable (1), drawer (1-3), cabinet (1-6), garbagecan (1). I can check one by one, starting with fridge 1.\nOK.\n> open fridge 1\nNothing happens.\n> go to countertop 1\nOn the countertop 1, you see a bowl 1, a mug 1, and a soapbottle 1.\n> go to countertop 2\nOn the countertop 2, you see a bread 1, a butterknife 1, a cellphone 1, a creditcard 1, a fork 1, a glassbottle 1, a lettuce 1, a spatula 1, and a vase 1.\n> go to countertop 3\nOn the countertop 3, you see a houseplant 1, a knife 1, a mug 3, a pan 2, a papertowelroll 1, a peppershaker 3, a peppershaker 2, a soapbottle 2, a spoon 3, and a spoon 2.\n> think: Now I find a cup (3). Next, I need to take it.\nOK.\n> take cup 3 from countertop 3\nNothing happens.\n> take mug 3 from countertop 3\nYou pick up the mug 3 from the countertop 3.\n> think: I mistakenly referred to the cup as a mug. I need to remember that the cup is actually in/on the form of a cup, not a mug.\nOK.\n> go to microwave 1\nThe microwave 1 is closed.\n> open microwave 1\nYou open the microwave 1. The microwave 1 is open. In it, you see a potato 1.\n> think: I need to heat the cup, not the potato. I should try a different method of heating the cup.\nOK.\n> go to stoveburner 1\nOn the stoveburner 1, you see a pot 1.\n> think: I can use the pot in/on the stoveburner to heat the cup. I should try heating the cup in/on the pot in/on the stoveburner.\nOK.\n> put cup 3 in/on pot 1 in/on stoveburner 1\nNothing happens.\n> think: I need to put the cup directly in/on the stoveburner, not in/on a pot. I should try placing the cup in/on the stoveburner itself.\nOK.\n> turn in/on stoveburner 1\nNothing happens.\n\n\nValuable experience summarization:\nAccording to the task goal and above action lists, it can be seen that I did not achieve any part of the task goal. I will keep trying to find and heat a cup, then put it in/on a cabinet in the next trail.",
+    "cool_0": "You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.\nYour task is to: put a cool tomato in microwave.\n> think: To solve the task, I need to find and take a tomato, then cool it with the fridge, and finally put it in/on the microwave.\nOK.\n> think: First, I need to find a tomato. A tomato is more likely to appear in/on the fridge, countertop, cabinet, shelf, or drawer. I can start by checking the fridge.\nOK.\n> go to fridge 1\nThe fridge 1 is closed.\n> open fridge 1\nYou open the fridge 1. The fridge 1 is open. In it, you see a bowl 2, a bowl 1, a egg 1, a lettuce 2, a lettuce 1, a potato 2, and a potato 1.\n> go to countertop 1\nOn the countertop 1, you see a mug 1, and a saltshaker 1.\n> go to countertop 2\nOn the countertop 2, you see a butterknife 2, a butterknife 1, a cellphone 1, a glassbottle 1, a knife 1, a lettuce 3, a peppershaker 1, a statue 2, a statue 1, and a vase 1.\n> go to countertop 3\nOn the countertop 3, you see a bread 1, a butterknife 3, a creditcard 2, a houseplant 1, a knife 3, a knife 2, a mug 2, a peppershaker 2, and a spatula 2.\n> go to cabinet 1\nOn the cabinet 1, you see a dishsponge 1.\n> go to cabinet 2\nThe cabinet 2 is closed.\n> open cabinet 2\nYou open the cabinet 2. The cabinet 2 is open. In it, you see nothing.\n> go to cabinet 3\nOn the cabinet 3, you see nothing.\n> go to cabinet 4\nOn the cabinet 4, you see a cup 1, and a vase 2.\n> go to cabinet 5\nThe cabinet 5 is closed.\n> open cabinet 5\nYou open the cabinet 5. The cabinet 5 is open. In it, you see nothing.\n> go to cabinet 6\nThe cabinet 6 is closed.\n> open cabinet 6\nYou open the cabinet 6. The cabinet 6 is open. In it, you see a plate 1, and a soapbottle 1.\n> go to shelf 1\nOn the shelf 1, you see a creditcard 1, and a dishsponge 2.\n> go to shelf 2\nOn the shelf 2, you see a papertowelroll 1, and a vase 3.\n> go to shelf 3\nOn the shelf 3, you see nothing.\n> think: I have found the tomato in/on the fridge. Next, I need to take it and cool it with the fridge before putting it in/on the microwave.\nOK.\n> take tomato from fridge 1\nNothing happens.\n> think: It seems that the tomato is not in/on the fridge. I should check other locations such as the countertop, cabinet, shelf, or drawer.\nOK.\n> go to countertop 1\nOn the countertop 1, you see a mug 1, and a saltshaker 1.\n> go to countertop 2\nOn the countertop 2, you see a butterknife 2, a butterknife 1, a cellphone 1, a glassbottle 1, a knife 1, a lettuce 3, a peppershaker 1, a statue 2, a statue 1, and a vase 1.\n> go to countertop 3\nOn the countertop 3, you see a bread 1, a butterknife 3, a creditcard 2, a houseplant 1, a knife 3, a knife 2, a mug 2, a peppershaker 2, and a spatula 2.\n> go to cabinet 1\nOn the cabinet 1, you see a dishsponge 1.\n> go to cabinet 2\nThe cabinet 2 is open. In it, you see nothing.\n> go to cabinet 3\nOn the cabinet 3, you see nothing.\n> go to cabinet 4\nOn the cabinet 4, you see a cup 1, and a vase 2.\n> think: The tomato is not in/on the countertop, cabinet, or shelf. I should check the drawer next.\nOK.\n> go to drawer 1\nThe drawer 1 is closed.\n> open drawer 1\nYou open the drawer 1. The drawer 1 is open. In it, you see a cellphone 2.\n> go to drawer 2\nThe drawer 2 is closed.\n> open drawer 2\nYou open the drawer 2. The drawer 2 is open. In it, you see a saltshaker 2, a spoon 2, and a spoon 1.\n> think: The tomato is not in/on the drawer either. I should check the remaining locations such as the sinkbasin or the diningtable.\nOK.\n> go to sinkbasin 1\nOn the sinkbasin 1, you see a fork 1, a glassbottle 2, a spatula 1, and a spoon 3.\n> think: The tomato is not in/on the sinkbasin. I should check the diningtable next.\nOK.\n> go to diningtable 1\nNothing happens.\n> think: It seems that the tomato is not in/on the diningtable either. I should go back and check the remaining locations such as the shelf or the stoveburner.\nOK.\n> go to shelf 3\nOn the shelf 3, you see nothing.\n> think: The tomato is not in/on shelf 3. I should check the remaining locations such as the stoveburner.\nOK.\n> go to stoveburner 1\nOn the stoveburner 1, you see a pot 1.\n> think: The tomato is not in/on the stoveburner either. I should go back and carefully check all the locations again to find the tomato.\nOK.\n> go to fridge 1\nThe fridge 1 is open. In it, you see a bowl 2, a bowl 1, a egg 1, a lettuce 2, a lettuce 1, a potato 2, and a potato 1.\n> think: I have already checked the fridge and the tomato was not there. I should carefully search all the other locations again to find the tomato.\nOK.\n> Based in/on the previous attempts, it seems that the tomato was not found in/on the initial locations checked. It would be best to carefully search all the locations again to find the tomato. Remember to focus in/on areas where food items are more likely to be found, such as the fridge, countertop, cabinet, shelf, or drawer. Once the tomato is found, remember to cool it with the fridge before putting it in/on the microwave to complete the task successfully.\nNothing happens.\n> Based in/on the previous attempts, it seems that the tomato was not found in/on the initial locations checked. It would be best to carefully search all the locations again to find the tomato. Remember to focus in/on areas where food items are more likely to be found, such as the fridge, countertop, cabinet, shelf, or drawer. Once the tomato is found, remember to cool it with the fridge before putting it in/on the microwave to complete the task successfully.\nNothing happens.\n\nSTATUS: FAIL\n\nValuable experience summarization:\nAccording to the task goal and above action lists, it can be seen that I did not achieve any part of the task goal. I will keep trying to find and take a tomato, then cool it with the fridge, and finally put it in/on the microwave in the next trail.",
+    "cool_1": "You are in the middle of a room. Looking quickly around you, you see a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 3, a countertop 2, a countertop 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a shelf 3, a shelf 2, a shelf 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.\nYour task is to: cool some potato and put it in microwave.\n> think: To solve the task, I need to find and take a potato, then cool it with fridge, then put it in/on the microwave.\nOK.\n> think: First I need to find a potato. A potato is more likely to appear in/on countertop (1-3), fridge (1), cabinet (1-6), drawer (1-3). I can check one by one, starting with countertop 1.\nOK.\n> go to countertop 1\nOn the countertop 1, you see a fork 2, and a mug 2.\n> go to countertop 2\nOn the countertop 2, you see a butterknife 1, a cellphone 1, a mug 1, a peppershaker 1, a potato 2, a potato 1, a soapbottle 1, a spoon 1, and a vase 1.\n> take potato 1 from countertop 2\nYou pick up the potato 1 from the countertop 2.\n> think: Now I find a potato (1). Next, I need to cool it with the fridge (1).\nOK.\n> go to fridge 1\nThe fridge 1 is closed.\n> cool potato 1 with fridge 1\nYou cool the potato 1 using the fridge 1.\n> think: Now I cool the potato (1). Next, I need to put it in/on the microwave.\nOK.\n> go to microwave 1\nThe microwave 1 is closed.\n> put potato 1 in/on microwave 1\nNothing happens.\n> put potato 1 in/on microwave 1\nNothing happens.\n\nSTATUS: FAIL\n\nValuable experience summarization:\nAccording to the task goal and above action lists, it can be seen that I have already achieved take and cool a potato, while made mistake when I tried to put it in microwave.So in the next trail, I will retain the correct actions that helped me to take and cool a potato, which refers to go to countertop 2 take potato 1 from countertop 2, then  go to fridge 1 cool potato 1 with fridge 1.",
+    "puttwo_0": "You are in the middle of a room. Looking quickly around you, you see a armchair 1, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a dresser 1, a garbagecan 1, a safe 1, a shelf 12, a shelf 11, a shelf 10, a shelf 9, a shelf 8, a shelf 7, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, a shelf 1, a sidetable 1, and a sofa 1.\nYour task is to: put two pillow in sofa.\n> think: To solve the task, I need to find and take the first pillow, then put it in the sofa, then find and take the second pillow, then put it in the sofa.\nOK.\n> think: First I need to find the first pillow. A pillow is more likely to appear in armchair (1), sofa (1), shelf (1-12), sidetable (1), dresser (1). I can check one by one, starting with armchair 1.\nOK.\n> go to armchair 1\nOn the armchair 1, you see a cellphone 2, a pillow 2, and a pillow 1.\n> take pillow 1 from armchair 1\nYou pick up the pillow 1 from the armchair 1.\n> think: Now I have the first pillow (1). Next, I need to put it in the sofa (1).\nOK.\n> go to sofa 1\nOn the sofa 1, you see a newspaper 3.\n> put pillow 1 in/on sofa 1\nYou put the pillow 1 in/on the sofa 1.\n> think: Now I have put the first pillow in the sofa. Next, I need to find the second pillow. I have visited armchair (1), so the second pillow is more likely to appear in sofa (1), shelf (1-12), sidetable (1), dresser (1). I can check one by one, starting with shelf 1.\nOK.\n> go to shelf 1\nOn the shelf 1, you see nothing.\n> think: The second pillow is not on shelf 1. I should try checking another location. I will go to sidetable 1 next.\nOK.\n> go to sidetable 1\nOn the sidetable 1, you see a remotecontrol 1, and a watch 1.\n> think: The second pillow is not on sidetable 1 either. I will try checking another location. I will go to dresser 1 next.\nOK.\n> go to dresser 1\nOn the dresser 1, you see a box 2, a cellphone 1, a creditcard 1, a laptop 1, a remotecontrol 3, a remotecontrol 2, and a statue 1.\n> think: The second pillow is not on dresser 1 either. I will try checking another location. I will go to shelf 2 next.\nOK.\n> go to shelf 2\nOn the shelf 2, you see nothing.\n> think: The second pillow is not on shelf 2. I will try checking another location. I will go back to the sofa 1 to see if the second pillow is there.\nOK.\n> go to sofa 1\nOn the sofa 1, you see a newspaper 3, and a pillow 1.\n> think: I have found the second pillow on the sofa 1. Now I need to take it and put it in the sofa.\nOK.\n> take pillow 1 from sofa 1\nYou pick up the pillow 1 from the sofa 1.\n> think: Now I have the second pillow (1). Next, I need to put it in the sofa (1).\nOK.\n\nSTATUS: FAIL\n\nValuable experience summarization:\nAccording to the task goal and above action lists, it can be seen that I have already achieved  take the first pillow then put it in the sofa, while made mistake when I tried to take the second pillow.So in the next trail, I will retain the correct actions that helped me to take the first pillow then put it in the sofa, which refers to go to armchair 1, take pillow 1 from armchair 1.",
+    "puttwo_1": "You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 2, a desk 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a garbagecan 1, a laundryhamper 1, a safe 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.\nYour task is to: put two cd in safe.\n> think: To solve the task, I need to find and take the first CD, then put it in/on the safe, then find and take the second CD, then put it in/on the safe.\nOK.\n> think: First, I need to find the CDs. CDs are more likely to appear in/on the drawers (1-6), shelves (1-6), bed 1. I can start by checking drawer 1.\nOK.\n> go to drawer 1\nThe drawer 1 is closed.\n> open drawer 1\nYou open the drawer 1. The drawer 1 is open. In it, you see a creditcard 1.\n> think: The CD is not in/on drawer 1. I should check another location. Next, I will check drawer 2.\nOK.\n> go to drawer 2\nOn the drawer 2, you see a creditcard 2.\n> think: The CD is not in/on drawer 2. I should check another location. Next, I will check drawer 3.\nOK.\n> go to drawer 3\nNothing happens.\n> think: The CD is not in/on drawer 3. I should check another location. Next, I will check drawer 4.\nOK.\n> go to drawer 4\nThe drawer 4 is closed.\n> open drawer 4\nYou open the drawer 4. The drawer 4 is open. In it, you see nothing.\n> think: The CD is not in/on drawer 4. I should check another location. Next, I will check drawer 5.\nOK.\n> go to drawer 5\nOn the drawer 5, you see a cd 3, and a pen 2.\n> take cd 3 from drawer 5\nYou pick up the cd 3 from the drawer 5.\n> think: Now I have found the first CD (3). Next, I need to put it in/on the safe.\nOK.\n> go to safe 1\nThe safe 1 is closed.\n> open safe 1\nYou open the safe 1. The safe 1 is open. In it, you see a cellphone 2.\n> think: The CD is not in/on the safe. I should check another location. Next, I will check the bed 1.\nOK.\n> go to bed 1\nOn the bed 1, you see a book 2, a book 1, a cellphone 1, a laptop 2, a laptop 1, and a pillow 1.\n> think: The CD is not on/in the bed 1. I should check another location. Next, I will check the desk 1.\nOK.\n> go to desk 1\nOn the desk 1, you see a bowl 1, a desklamp 1, a mug 1, and a pen 1.\n> think: The CD is not on/in the desk 1. I should check another location. Next, I will check the desk 2.\nOK.\n> go to desk 2\nOn the desk 2, you see a bowl 2, a cd 2, a cd 1, a creditcard 3, a mug 2, a pencil 3, and a pencil 2.\n> take cd 2 from desk 2\nNothing happens.\n> think: I made a mistake in/on identifying the CDs. The second CD is actually in/on the desk 2, not in/on the drawer 5. I should take the CD 2 from the desk 2.\nOK.\n> take cd 2 from desk 2\nNothing happens.\n> think: I made another mistake in/on identifying the CDs. The second CD is actually in/on the desk 1, not in/on the desk 2. I should take the CD 2 from the desk 1.\nOK.\n> take cd 2 from desk 1\nNothing happens.\n> think: I made a mistake in/on identifying the location of the second CD. It seems I need to reevaluate my search strategy and focus in/on finding the correct items. I should try checking the shelves next, as they haven't been explored yet. Let's go to shelf 1.\nOK.\n> go to shelf 1\nOn the shelf 1, you see a alarmclock 1.\n> think: The CD is not on/in shelf 1. I should check another location. Next, I will check shelf 2.\nOK.\n> go to shelf 2\nOn the shelf 2, you see nothing.\n> think: The CD is not on/in shelf 2. I should check another location. Next, I will check shelf 3.\nOK.\n> go to shelf 3\nOn the shelf 3, you see a bowl 1, and a desklamp 1.\n> think: The CD is not on/in shelf 3. I should check another location. Next, I will check shelf 4.\nOK.\n> go to shelf 4\nOn the shelf 4, you see nothing.\n> think: The CD is not on/in shelf 4. I should check another location. Next, I will check shelf 5.\nOK.\n> go to shelf 5\nOn the shelf 5, you see a keychain 1.\n> think: The CD is not on/in shelf 5. I should check another location. Next, I will check shelf 6.\nOK.\n> go to shelf 6\nOn the shelf 6, you see nothing.\n> think: The CD is not on/in shelf 6. I have checked all possible locations and still haven't found the second CD. I need to rethink my strategy and make sure I accurately identify the items needed for the task. Let's go back and carefully search the desk 2 again to find the second CD.\nOK.\n> go to desk 2\nOn the desk 2, you see a bowl 2, a cd 2, a cd 1, a creditcard 3, a mug 2, a pencil 3, and a pencil 2.\n> take cd 2 from desk 2\nNothing happens.\n> think: I made a mistake in/on identifying the location of the second CD. It seems I need to reevaluate my search strategy and focus in/on finding the correct items. I should try checking the drawers next, as they haven't been explored yet. Let's go to drawer 6.\nOK.\n> go to drawer 6\nThe drawer 6 is closed.\n> open drawer 6\nYou open the drawer 6. The drawer 6 is open. In it, you see a book 3.\n> think: The CD is not in/on drawer 6. I should check another location. Next, I will check drawer 5.\nOK.\n> go to drawer 5\nOn the drawer 5, you see a pen 2.\n> think: The CD is not in/on drawer 5. I should check another location. Next, I will check drawer 4.\nOK.\n\nSTATUS: FAIL\n\nValuable experience summarization:\nAccording to the task goal and above action lists, it can be seen that I have already achieved take the first CD, while made mistake when I tried to put the first CD in/on the safe.So in the next trail, I will retain the correct actions that helped me to take the first CD, which refers to go to drawer 5 then take cd 3 from drawer 5.",
+    "examine_0": "You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 2, a desk 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a garbagecan 1, a laundryhamper 1, a safe 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.\nYour task is to: look at bowl under the desklamp.\n> think: To solve the task, I need to find and take a bowl, then find and use a desklamp.\nOK.\n> think: First I need to find a bowl. A bowl is more likely to appear in drawer (1-6), desk (1-2), shelf (1-6), garbagecan (1), laundryhamper (1). I can check one by one, starting with drawer 1.\nOK.\n> go to drawer 1\nThe drawer 1 is closed.\n> open drawer 1\nYou open the drawer 1. The drawer 1 is open. In it, you see a cellphone 2.\n> go to drawer 2\nOn the drawer 2, you see a keychain 1.\n> go to drawer 3\nNothing happens.\n> go to drawer 4\nThe drawer 4 is closed.\n> open drawer 4\nYou open the drawer 4. The drawer 4 is open. In it, you see nothing.\n> go to drawer 5\nOn the drawer 5, you see nothing.\n> go to drawer 6\nThe drawer 6 is closed.\n> open drawer 6\nYou open the drawer 6. The drawer 6 is open. In it, you see a book 2, and a pen 2.\n> go to desk 1\nOn the desk 1, you see a alarmclock 1, a desklamp 1, a mug 1, and a pencil 1.\n> think: Now I find a desklamp (1). Next, I need to use it.\nOK.\n> use desklamp 1\nYou turn on the desklamp 1.\n> \nNothing happens.\n> go to desk 2\nOn the desk 2, you see a bowl 2, a bowl 1, a cd 2, a cd 1, and a creditcard 3.\n> think: Now I find a bowl (2). Next, I need to take it.\nOK.\n> take bowl 2 from desk 2\nYou pick up the bowl 2 from the desk 2.\n> \nNothing happens.\n> \nNothing happens.\nSTATUS: FAIL\n\nValuable experience summarization:\nAccording to the task goal and above action lists, it can be seen that I have already separately achieved find and take a bowl and find and use a desklamp successfully, while made mistake when I tried to make the objectes interacted. So in the next trail, I will retain the correct actions that helped me to find and take a bowl and find and use a desklamp, which refers to take bowl 2 from desk 2 and go to desk 1 and find desklamp 1.",
+    "examine_1": "You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 2, a desk 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a garbagecan 1, a laundryhamper 1, a safe 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.\nYour task is to: examine the cd with the desklamp.\n> think: To solve the task, I need to find and take a cd, then find and use a desklamp. First I need to find a cd. A cd is more likely to appear in/on drawer (1-6), shelf (1-6), desk (1-2), bed (1), garbagecan (1), laundryhamper (1), safe (1). I can check one by one, starting with drawer 1.\nOK.\n> go to drawer 1\nThe drawer 1 is closed.\n> open drawer 1\nYou open the drawer 1. The drawer 1 is open. In it, you see nothing.\n> go to drawer 2\nOn the drawer 2, you see a cellphone 2, and a creditcard 1.\n> think: I didn't find a cd in/on drawer 1 or drawer 2. I should check the other drawers. Next, I will go to drawer 3.\nOK.\n> go to drawer 3\nNothing happens.\n> go to drawer 3\nNothing happens.\n\nSTATUS: FAIL\n\nValuable experience summarization:\nAccording to the task goal and above action lists it can be seen that I did not achieve any part of the task goal. I will keep trying to find and take a cd, then find and use a desklamp in the next trail."
+}
 
-<style>
-    .textbox {
-        background-color: #f2f2f2;
-        padding: 10px;
-        font-family: "Times New Roman", Times, serif;
-    }
 
-    .title {
-        text-align: center;
-    }
+### 2.Prompt of Failure Lesson Summary Process
+You are in the middle of a room. Looking quickly around you, you see a cabinet 10, a cabinet 9, a cabinet 8, a cabinet 7, a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 2, a countertop 1, a diningtable 2, a diningtable 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.
+Your task is to: heat some mug and put it in coffeemachine.
+> think: To solve the task, I need to find and take a mug, then heat it with stoveburner, then put it in coffeemachine.
+Ok.
+> look
+You are in the middle of a room. Looking quickly around you, you see nothing.
+> think: First I need to find a mug. A mug is more likely to appear in countertop (1-2), diningtable (1-2), drawer (1-3), fridge (1), sinkbasin (1), stoveburner (1-4), toaster (1). I can check one by one, starting with countertop 1.
+Ok.
+> look
+You are in the middle of a room. Looking quickly around you, you see nothing.
+> go to countertop 1
+On the countertop 1, you see a butterknife 1, a cup 1, a fork 2, and a mug 1.
+> think: Now I find a mug (1). Next, I need to take it.
+Ok.
+> take mug 1 from countertop 1
+You pick up the mug 1 from the countertop 1.
+> think: Now I take a mug (1). Next, I need to heat it with stoveburner (1-4).
+Ok.
+> go to stoveburner 1
+On the stoveburner 1, you see a pan 2.
+> examine stoveburner 1
+On the stoveburner 1, you see a pan 2.
+> examine stoveburner 1
+On the stoveburner 1, you see a pan 2.
+> examine stoveburner 1
+On the stoveburner 1, you see a pan 2.
+> examine stoveburner 1
+On the stoveburner 1, you see a pan 2.
+STATUS: FAIL
 
-    .content {
-        font-weight: bold;
-    }
+Failure lesson summarization: It's a heat task.
+According to the lesson pool, I should only use the microwave for heating, go to the microwave, heat object with the microwave.
 
-    .smaller-font {
-        font-size: smaller;
-    }
-</style>
-<div style="text-align: center;">Listing 1: Prompt for finishing task decomposition,we only need to input the Fixed-format task goal in the dataset</div>
-<div class="textbox">
-    <p class="smaller-font">
-    <pre>
-Please split the task goal，and there are some examples:
 
-      
-Task Goal: on_poundcake_kitchentable(id:123): 1,on_milk_kitchentable(id:123): 1, 
-#The goal means the task is "put one poundcake on kitchentable and put one milk on kitchentable" 
-#so we can split the goal into 2 subgoal,follow this return format exactly. 
-return subgoal[on_poundcake_kitchentable(id:123): 1], subgoal[on_milk_kitchentable(id:123): 1]
+You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 2, a desk 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a garbagecan 1, a laundryhamper 1, a safe 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.
+Your task is to: look at bowl under the desklamp.
+> think: To solve the task, I need to find and take a bowl, then find and use a desklamp.
+OK.
+> think: First I need to find a bowl. A bowl is more likely to appear in drawer (1-6), desk (1-2), shelf (1-6), garbagecan (1), laundryhamper (1). I can check one by one, starting with drawer 1.
+OK.
+> go to drawer 1
+The drawer 1 is closed.
+> open drawer 1
+You open the drawer 1. The drawer 1 is open. In it, you see a cellphone 2.
+> go to drawer 2
+On the drawer 2, you see a keychain 1.
+> go to drawer 3
+Nothing happens.
+> go to drawer 4
+The drawer 4 is closed.
+> open drawer 4
+You open the drawer 4. The drawer 4 is open. In it, you see nothing.
+> go to drawer 5
+On the drawer 5, you see nothing.
+> go to drawer 6
+The drawer 6 is closed.
+> open drawer 6
+You open the drawer 6. The drawer 6 is open. In it, you see a book 2, and a pen 2.
+> go to desk 1
+On the desk 1, you see a alarmclock 1, a desklamp 1, a mug 1, and a pencil 1.
+> think: Now I find a desklamp (1). Next, I need to use it.
+OK.
+> use desklamp 1
+You turn on the desklamp 1.
+> 
+Nothing happens.
+> go to desk 2
+On the desk 2, you see a bowl 2, a bowl 1, a cd 2, a cd 1, and a creditcard 3.
+> think: Now I find a bowl (2). Next, I need to take it.
+OK.
+> take bowl 2 from desk 2
+You pick up the bowl 2 from the desk 2.
+> 
+Nothing happens.
+> 
+Nothing happens.
+STATUS: FAIL
 
-Task Goal: on_chicken_kitchentable(id:123): 2, 
-#The goal means the task is "put two chickens on the kitchentable" 
-#so we can split the goal into 1 subgoal,follow this return format exactly. 
-return subgoal[on_chicken_kitchentable(id:123): 2]
+Failure lesson summarization: It's an examine task.
+According to the lesson pool, I should make the objects to be interacted close to each other, which means take the bowl and go to the desk where the desklamp is, then use the desklamp.
 
-Task Goal: closed_microwave(id:158): 1,turnon_microwave(id:158): 1,closed_stove(id:150): 1,turnon_stove(id:150):1,inside_pancake_microwave(id:158): 1,inside_cupcake_stove(id:150): 1, 
-#The goal means the task is "put one pancake in microwave and switch on microwave, put one cupcake in stove and switch on stove" 
-#so we can split the goal into 2 subgoal,follow this return format exactly. 
-return subgoal[closed_microwave(id:158): 1,turnon_microwave(id:158): 1,inside_pancake_microwave(id:158): 1], subgoal[closed_stove(id:150): 1,turnon_stove(id:150): 1,inside_cupcake_stove(id:150): 1]
 
-Task Goal:closed_stove(id:150): 1,turnon_stove(id:150): 1,inside_poundcake_stove(id:150):3,on_milk_kitchentable(id:123): 2, 
-#The goal means the task is "put three poundcakes in stove and switch on stove, put two milk on kitchentable" 
-#so we can split the goal into 2 subgoal,follow this return format exactly. 
-return subgoal[closed_stove(id:150):1,turnon_stove(id:150):1 ,inside_poundcake_stove(id:150):3],subgoal[on_milk_kitchentable(id:123): 2]
+### 3.Prompt of Comprehensive Construction Process
+You are in the middle of a room. Looking quickly around you, you see a cabinet 10, a cabinet 9, a cabinet 8, a cabinet 7, a cabinet 6, a cabinet 5, a cabinet 4, a cabinet 3, a cabinet 2, a cabinet 1, a coffeemachine 1, a countertop 2, a countertop 1, a diningtable 2, a diningtable 1, a drawer 3, a drawer 2, a drawer 1, a fridge 1, a garbagecan 1, a microwave 1, a sinkbasin 1, a stoveburner 4, a stoveburner 3, a stoveburner 2, a stoveburner 1, and a toaster 1.
+Your task is to: heat some mug and put it in coffeemachine.
+> think: To solve the task, I need to find and take a mug, then heat it with stoveburner, then put it in coffeemachine.
+Ok.
+> look
+You are in the middle of a room. Looking quickly around you, you see nothing.
+> think: First I need to find a mug. A mug is more likely to appear in countertop (1-2), diningtable (1-2), drawer (1-3), fridge (1), sinkbasin (1), stoveburner (1-4), toaster (1). I can check one by one, starting with countertop 1.
+Ok.
+> look
+You are in the middle of a room. Looking quickly around you, you see nothing.
+> go to countertop 1
+On the countertop 1, you see a butterknife 1, a cup 1, a fork 2, and a mug 1.
+> think: Now I find a mug (1). Next, I need to take it.
+Ok.
+> take mug 1 from countertop 1
+You pick up the mug 1 from the countertop 1.
+> think: Now I take a mug (1). Next, I need to heat it with stoveburner (1-4).
+Ok.
+> go to stoveburner 1
+On the stoveburner 1, you see a pan 2.
+> examine stoveburner 1
+On the stoveburner 1, you see a pan 2.
+> examine stoveburner 1
+On the stoveburner 1, you see a pan 2.
+> examine stoveburner 1
+On the stoveburner 1, you see a pan 2.
+> examine stoveburner 1
+On the stoveburner 1, you see a pan 2.
+STATUS: FAIL
 
-Task Goal:{input} 
-  </pre>
-  </p>
-</div>
+Plan: Combine the valuable experience and the failure lesson, my total plan of actions for next trail is, go to countertop 1, take mug 1 from countertop 1, go to microwave, heat mug 1, go to coffeemachine, put mug 1 in coffeemachine.
 
-#### 2.Prompt of Task Planning
 
-<div style="text-align: center;">Listing 2: The full prompt with LLM of our agent to implement task planning</div>
+You are in the middle of a room. Looking quickly around you, you see a bed 1, a desk 2, a desk 1, a drawer 6, a drawer 5, a drawer 4, a drawer 3, a drawer 2, a drawer 1, a garbagecan 1, a laundryhamper 1, a safe 1, a shelf 6, a shelf 5, a shelf 4, a shelf 3, a shelf 2, and a shelf 1.
+Your task is to: look at bowl under the desklamp.
+> think: To solve the task, I need to find and take a bowl, then find and use a desklamp.
+OK.
+> think: First I need to find a bowl. A bowl is more likely to appear in drawer (1-6), desk (1-2), shelf (1-6), garbagecan (1), laundryhamper (1). I can check one by one, starting with drawer 1.
+OK.
+> go to drawer 1
+The drawer 1 is closed.
+> open drawer 1
+You open the drawer 1. The drawer 1 is open. In it, you see a cellphone 2.
+> go to drawer 2
+On the drawer 2, you see a keychain 1.
+> go to drawer 3
+Nothing happens.
+> go to drawer 4
+The drawer 4 is closed.
+> open drawer 4
+You open the drawer 4. The drawer 4 is open. In it, you see nothing.
+> go to drawer 5
+On the drawer 5, you see nothing.
+> go to drawer 6
+The drawer 6 is closed.
+> open drawer 6
+You open the drawer 6. The drawer 6 is open. In it, you see a book 2, and a pen 2.
+> go to desk 1
+On the desk 1, you see a alarmclock 1, a desklamp 1, a mug 1, and a pencil 1.
+> think: Now I find a desklamp (1). Next, I need to use it.
+OK.
+> use desklamp 1
+You turn on the desklamp 1.
+>
+Nothing happens.
+> go to desk 2
+On the desk 2, you see a bowl 2, a bowl 1, a cd 2, a cd 1, and a creditcard 3.
+> think: Now I find a bowl (2). Next, I need to take it.
+OK.
+> take bowl 2 from desk 2
+You pick up the bowl 2 from the desk 2.
+>
+Nothing happens.
+>
+Nothing happens.
+STATUS: FAIL
 
-<div class="textbox">
-    <p class="smaller-font">
-    <pre>
+Plan: Combine the valuable experience and the failure lesson, my total plan of actions for next trail is, go to desk 2, take bowl 2 from desk 2, go to desk 1, use desklamp 1
 
-long-term memory:
-      
-from actions import walk (obj), grab (obj), switchon (obj), switchoff (obj), open (obj), close (obj), putin (obj) (obj), putback (obj) (obj)
-
-#remeber if the key object INSIDE kitchencabinet, you should open the kitchencabinet first or the key object INSIDE room, you should walk to the room,and different id represent different items, so note the id number. # remeber you should grab only one item at a time and you can not open a cabinet that has been opened
-
-#The total task goal: {task_goal}
-#The completed task goal: {completed_goal}
-
-short-term memory:
-
-There are some examples:
-
-{example_task1}
-{example_task2}
-{example_task3}
-
- #remember the key object locations and states: {message}
- #The task goal: {current_task_goal}
-def task():
-  </pre>
-  </p>
-</div>
-
-<div style="text-align: center;">Listing 3:In the short-term memory, dynamically select three examples according to the current task goal and insert them into the prompt.Here is a set of examples to choose from.</div>
-<div class="textbox">
-    <p class="smaller-font">
-    <pre>
--------------------------------------------------------------------------- 
-# remember the key object locations and states: [("stove(id:150)", "INSIDE", "kitchen(id:50)"), ("chicken(id:332)", "INSIDE", "microwave(id:158)"),("chicken(id:333)", "INSIDE", "microwave(id:158)")] and stove(id:150)'s states are closed,off,microwave(id:158)'s states are closed,off, 
-#The task goal: closed_stove(id:150): 1,turnon_stove(id:150): 1,inside_chicken_stove(id:150): 2, 
-def task():
-#The goal means the task is "put two chickens in stove and switch on stove" 
-#1.Subgoal Thought: find the first chicken
-#2.Rule Thought: The chicken(id:332) inside microwave(id:158),the microwave is closed,so we should open the microwave first
-walk('kitchen(id:50)')
-find('microwave(id:158)')
-open('microwave(id:158)')
-grab('chicken(id:332)')
-close('microwave(id:158)')
-#0.Rule Thought: You have grabbed chicken, remember you should grab only one item at a time,so put the chicken first. 
-#1.Subgoal Thought: put the chicken in stove
-#2.Rule Thought: put the chicken in stove（id:150）, the stove is closed, so we should open the stove first. find('stove(id:150)')
-open('stove(id:150)')
-putin('chicken(id:332)', 'stove(id:150)')
-close('stove(id:150)')
-#1.Subgoal Thought:find the second chicken
-#2.Rule Thought: the second chicken(id:333) inside microwave(id:158),the microwave is closed,so we should open the
-microwave first
-walk('kitchen(id:50)')
-find('microwave(id:158)')
-open('microwave(id:158)')
-grab('chicken(id:333)')
-close('microwave(id:158)')
-#0.Rule Thought: You have grabbed chicken,remember you should grab only one item at a time,so put the chicken first. 
-#1.Subgoal Thought:put the chicken in stove
-#2.Rule Thought: put the chicken in stove(id:150), the stove is closed, so we should open the stove first. open('stove(id:150)')
-putin('chicken(id:333)', 'stove(id:150)')
-close('stove(id:150)')
-#1.Subgoal Thought:switch on the stove
-#2.Rule Thought: When we switch on the stove, we should make sure it is closed. switchon('stove(id:150)')
-# done
---------------------------------------------------------------------------
--------------------------------------------------------------------------- 
-# remember the key object locations and states: [('pancake(id:342)', 'INSIDE', 'livingroom(id:262)')] and microwave(id:158)'s states are closed,off, #The task goal: closed_microwave(id:158): 1,turnon_microwave(id:158): 1,inside_pancake_microwave(id:158): 1
-def task():
-#The goal means the task is "put one pancake in microwave and switch on microwave". 
-#1.Subgoal Thought: find one pancake. #2.Rule Thought: The pancake(id:342) inside livingroom(id:262),so we should walk to the livingroom first. 
-walk('livingroom(id:262)')
-find('pancake(id:342)')
-grab('pancake(id:342)')
-#0.Rule Thought: You have grabbed pancake,remember you should grab only one item at a time,so put the pancake first. 
-#1.Subgoal Thought: put the pancake in microwave. #2.Rule Thought: put the pancake(id:342) in microwave(id:158), the microwave is closed, so we should open the microwave first.
-find('microwave(id:158)')
-open('microwave(id:158)')
-putin('pancake(id:342)', 'microwave(id:158)')
-close('microwave(id:158)')
-#1.Subgoal Thought:switch on the microwave
-#2.Rule Thought: When we switch on the microwave, we should make sure it is closed. 
-switchon('microwave(id:158)')
-# done
---------------------------------------------------------------------------
--------------------------------------------------------------------------- 
-#remember the key object locations and states: [('cupcake(id:334)', 'INSIDE', 'kitchencabinet(id:131)'), ('cupcake(id:332)','INSIDE', 'kitchencabinet(id:130)'), ('cupcake(id:333)', 'INSIDE', 'kitchencabinet(id:126)')] and stove(id:150)'s states are closed,off,kitchencabinet(id:131)'s state is closed,kitchencabinet(id:130)'s state is closed,kitchencabinet(id:126)'s state is closed, 
-#The task goal: closed_stove(id:150): 1,turnon_stove(id:150): 1,inside_cupcake_stove(id:150): 1
-def task():
-#The goal means the task is "put one cupcake in stove and switch on stove." 
-#1.Subgoal Thought: find one cupcake. 
-#2.Rule Thought: The cupcake(id:334) inside kitchencabinet(id:131),the kitchencabinet is closed,so we should open the kitchencabinet first. 
-find('kitchencabinet(id:131)')
-open('kitchencabinet(id:131)')
-find('cupcake(id:334)')
-grab('cupcake(id:334)')
-close('kitchencabinet(id:131)')
-#0.Rule Thought: You have grabbed cupcake,remember you should grab only one item at a time,so put the cupcake first. 
-#1.Subgoal Thought: put the cupcake in stove
-#2.Rule Thought: put the cupcake(id:334) in stove(id:150), and the stove is closed, so we should open the stove first. 
-find('stove(id:150)')
-open('stove(id:150)')
-putin('cupcake(id:334)', 'stove(id:150)')
-close('stove(id:150)')
-#1.Subgoal Thought:switch on the stove
-#2.Rule Thought: When we switch on the stove, we should make sure it is closed. 
-switchon('stove(id:150)')
-# done
---------------------------------------------------------------------------
--------------------------------------------------------------------------- 
-# remember the key object current locations and states: [('chicken(id:332)', 'INSIDE', 'fridge(id:149)')] and fridge(id:149)'sstate is closed, 
-#The task goal: on_chicken_kitchentable(id:123): 1
-def task():
-#The goal means the task is "put one chicken on kitchentable" 
-#1.Subgoal Thought: find the chicken
-#2.Rule Thought: The chicken(id:332) inside fridge(id:149), the fridge is closed,so we should open the fridge first. 
-find('fridge(id:149)')
-open('fridge(id:149)')
-grab('chicken(id:332)')
-close('fridge(id:149)')
-#0.Rule Thought: You have grabbed chicken,remember you should grab only one item at a time,so put the chicken first. 
-#1.Subgoal Thought: put the chicken on the kitchentable
-#2.Rule Thought: put the chicken(id:332) on the kitchentable(id:123). find('kitchentable(id:123)')
-putback('chicken(id:332)', 'kitchentable(id:123)')
-# done
---------------------------------------------------------------------------
--------------------------------------------------------------------------- 
-# remember the key object locations and states: [('milk(id:332)', 'INSIDE', 'kitchencabinet(id:128)'), ('milk(id:333)','INSIDE', 'kitchencabinet(id:130)')] and kitchencabinet(id:128)'s state is closed,kitchencabinet(id:130)'s state is closed,kitchencabinet(id:126)'s state is closed, #The task goal: on_milk_kitchentable(id:123): 2
-def task():
-#The goal means the task is "put two milk on kitchentable" 
-#1.Subgoal Thought: find the first milk
-#2.Rule Thought: The milk(id:332) inside kitchencabinet(id:128), the kitchencabinet is closed,so we should open the kitchencabinet first. 
-walk('kitchen(id:50)')
-find('kitchencabinet(id:128)')
-open('kitchencabinet(id:128)')
-find('milk(id:332)')
-grab('milk(id:332)')
-close('kitchencabinet(id:128)')
-#0.Rule Thought: You have grabbed milk,remember you should grab only one item at a time,so put the milk first. 
-#1.Subgoal Thought: put the first milk on the kitchentable
-#2.Rule Thought: put the milk(id:332) on the kitchentable(id:123)
-find('kitchentable(id:123)')
-putback('milk(id:332)', 'kitchentable(id:123)')
-#1.Subgoal Thought: find the second milk
-#2.Rule Thought: The milk(id:333) inside kitchencabinet(id:130), the kitchencabinet is closed,so we should open the kitchencabinet first. find('kitchencabinet(id:130)')
-open('kitchencabinet(id:130)')
-find('milk(id:333)')
-grab('milk(id:333)')
-close('kitchencabinet(id:130)')
-#0.Rule Thought: You have grabbed milk,remember you should grab only one item at a time,so put the milk first. 
-#1.Subgoal Thought: put the second milk on the kitchentable
-#2.Rule Thought: put the milk(id:333) on the kitchentable(id:123)
-find('kitchentable(id:123)')
-putback('milk(id:333)', 'kitchentable(id:123)')
-# done
---------------------------------------------------------------------------
--------------------------------------------------------------------------- 
-# remember the key object locations and states: [('chicken(id:333)', 'INSIDE', 'stove(id:150)'), ('chicken(id:332)', 'INSIDE','fridge(id:149)')] and stove(id:150)'s states are closed,off,fridge(id:149)'s state is closed, 
-#The task goal: on_chicken_kitchentable(id:123): 2
-def task():
-#The goal means the task is "put two chickens on kitchentable" 
-#1.Subgoal Thought: find the first chicken
-#2.Rule Thought: The chicken(id:332) inside fridge(id:149),the fridge is closed, so we should open the fridge first
-open('fridge(id:149)')
-find('chicken(id:332)')
-grab('chicken(id:332)')
-close('fridge(id:149)')
-#0.Rule Thought: You have grabbed chicken,remember you should grab only one item at a time,so put the chicken first. 
-#1.Subgoal Thought: put the chicken on kitchentable
-#2.Rule Thought: put the chicken(id:332) on kitchentable(id:123)
-find('kitchentable(id:123)')
-putback('chicken(id:332)', 'kitchentable(id:123)')
-#1.Subgoal Thought:find the second chicken
-#2.Rule Thought: The chicken(id:333) inside stove(id:150),the stove is closed, so we should open the stove first
-open('stove(id:150)')
-find('chicken(id:333)')
-grab('chicken(id:333)')
-close('stove(id:150)')
-#0.Rule Thought: You have grabbed chicken,remember you should grab only one item at a time,so put the chicken first. 
-#1.Subgoal Thought: put the chicken on kitchentable
-#2.Rule Thought: put the chicken(id:333) on kitchentable(id:123)
-find('kitchentable(id:123)')
-putback('chicken(id:333)', 'kitchentable(id:123)')
-# done
---------------------------------------------------------------------------
-  </pre>
-  </p>
-</div>
-
-<div style="text-align: center;">Listing 4: An example of our method, full interaction process of the task goal {on_chicken_kitchentable(id:123): 2}</div>
-<div class="textbox">
-    <p class="smaller-font">
-    <pre>
-------------------------------------------------input prompt-------------------------------------------------------------
-long_memory:
-      
-from actions import walk (obj), grab (obj), switchon (obj), switchoff (obj), open (obj), close (obj), putin (obj) (obj), putback (obj) (obj)
-#remeber if the key object INSIDE kitchencabinet, you should open the kitchencabinet first or the key object INSIDE room, you should walk to the roomand different id represent different items, so note the id number.remeber you should grab only one item at a time and you can not open a cabinet that has been opened
-#The total task goal: on_chicken_kitchentable(id:123): 2, 
-#The completed task goal:
-
-short_memory:
-
-There are some examples:
-#remember the key object locations and states: [('chicken(id:333)', 'INSIDE', 'stove(id:150)'), ('chicken(id:332)','INSIDE', 'fridge(id:149)')] and stove(id:150)'s states are closed,of ,fridge(id:149)'s state is closed, #The task goal: on_chicken_kitchentable(id:123): 2
-def task():
-#The goal means the task is "put two chickens on kitchentable" 
-#1.Subgoal Thought: find the first chicken
-#2.Rule Thought: The chicken(id:332) inside fridge(id:149),the fridge is closed, so we should open the fridge first
-open('fridge(id:149)')
-find('chicken(id:332)')
-grab('chicken(id:332)')
-close('fridge(id:149)')
-#1.Subgoal Thought: put the chicken on kitchentable
-#2.Rule Thought: put the chicken(id:332) on kitchentable(id:123)
-find('kitchentable(id:123)')
-putback('chicken(id:332)', 'kitchentable(id:123)')
-#1.Subgoal Thought:find the second chicken
-#2.Rule Thought: The chicken(id:333) inside stove(id:150),the stove is closed, so we should open the stove first
-open('stove(id:150)')
-find('chicken(id:333)')
-grab('chicken(id:333)')
-close('stove(id:150)')
-#1.Subgoal Thought: put the chicken on kitchentable
-#2.Rule Thought: put the chicken(id:333) on kitchentable(id:123)
-find('kitchentable(id:123)')
-putback('chicken(id:333)', 'kitchentable(id:123)')
-#done
-
-#remember the key object current locations and states: [('chicken(id:332)', 'INSIDE', 'fridge(id:149)')] and fridge(id:149)'s state is closed, #The task goal: on_chicken_kitchentable(id:123): 1
-def task():
-#The goal means the task is "put one chicken on kitchentable" #1.Subgoal Thought: find the chicken
-#2.Rule Thought: The chicken(id:332) inside fridge(id:149), the fridge is closed,so we should open the fridge first. find('fridge(id:149)')
-open('fridge(id:149)')
-grab('chicken(id:332)')
-close('fridge(id:149)')
-#1.Subgoal Thought: put the chicken on the kitchentable
-#2.Rule Thought: put the chicken(id:332) on the kitchentable(id:123). find('kitchentable(id:123)')
-putback('chicken(id:332)', 'kitchentable(id:123)')
-#done
-
-#remember the key object locations and states: [('milk(id:332)', 'INSIDE', 'kitchencabinet(id:128)'), ('milk(id:333)','INSIDE', 'kitchencabinet(id:130)')] and kitchencabinet(id:128)'s state is closed,kitchencabinet(id:130)'s state is closed,kitchencabinet(id:126)'s state is closed, 
-#The task goal: on_milk_kitchentable(id:123): 2
-def task():
-#The goal means the task is "put two milk on kitchentable" 
-#1.Subgoal Thought: find the first milk
-#2.Rule Thought: The milk(id:332) inside kitchencabinet(id:128), the kitchencabinet is closed,so we should open the kitchencabinet first.
-walk('kitchen(id:50)')
-find('kitchencabinet(id:128)')
-open('kitchencabinet(id:128)')
-find('milk(id:332)')
-grab('milk(id:332)')
-close('kitchencabinet(id:128)')
-#1.Subgoal Thought: put the first milk on the kitchentable
-#2.Rule Thought: put the milk(id:332) on the kitchentable(id:123)
-find('kitchentable(id:123)')
-putback('milk(id:332)', 'kitchentable(id:123)')
-#1.Subgoal Thought: find the second milk
-#2.Rule Thought: The milk(id:333) inside kitchencabinet(id:130), the kitchencabinet is closed,so we should open the kitchencabinet first.
-find('kitchencabinet(id:130)')
-open('kitchencabinet(id:130)')
-find('milk(id:333)')
-grab('milk(id:333)')
-close('kitchencabinet(id:130)')
-#1.Subgoal Thought: put the second milk on the kitchentable
-#2.Rule Thought: put the milk(id:333) on the kitchentable(id:123)
-find('kitchentable(id:123)')
-putback('milk(id:333)', 'kitchentable(id:123)')
-#done
-
-#remember the key object locations and states: [('chicken(id:332)', 'INSIDE', 'fridge(id:149)'), ('chicken(id:333)','INSIDE', 'fridge(id:149)'), ('chicken(id:334)', 'INSIDE', 'stove(id:150)')] and fridge(id:149)'s state is closed,fridge(id:149)'s state is closed,stove(id:150)'s state is closed, 
-#The task goal: on_chicken_kitchentable(id:123): 2
-def task(): 
--------------------------------------------------------end----------------------------------------------------------
-
--------------------------------------------------our agent output---------------------------------------------------- 
-#The goal means the task is "put two chickens on kitchentable" 
-#1.Subgoal Thought: find the first chicken
-#2.Rule Thought: The chicken(id:332) inside fridge(id:149),the fridge is closed, so we should open the fridge first
-open('fridge(id:149)')
-find('chicken(id:332)')
-grab('chicken(id:332)')
-close('fridge(id:149)')
-#1.Subgoal Thought: put the chicken on kitchentable
-#2.Rule Thought: put the chicken(id:332) on kitchentable(id:123)
-find('kitchentable(id:123)')
-putback('chicken(id:332)', 'kitchentable(id:123)')
-#1.Subgoal Thought:find the second chicken
-#2.Rule Thought: The chicken(id:333) inside fridge(id:149),the fridge is closed, so we should open the fridge first
-open('fridge(id:149)')
-find('chicken(id:333)')
-grab('chicken(id:333)')
-close('fridge(id:149)')
-#1.Subgoal Thought: put the chicken on kitchentable
-#2.Rule Thought: put the chicken(id:333) on kitchentable(id:123)
-find('kitchentable(id:123)')
-putback('chicken(id:333)', 'kitchentable(id:123)')
-#done
--------------------------------------------------------end---------------------------------------------------------
-    </pre>
-  </p>
-</div>
-
-### B.Experiments
-#### 1.Implement of Planning-only
-
-We have adopted the prompt construction method from ProgPrompt but do not include interaction with the environment.The planning-only method consists of embedding {task_goal}(he current task goal) and {message}(the initial observed state of the environment) directly into the prompt, allowing the agent to generate a complete plan for the task.
-
-<div style="text-align: center;">Listing 5:The full prompt with LLM of planning-only agent to implement task planning</div>
-<div class="textbox">
-    <p class="smaller-font">
-    <pre>
-from actions import walk (obj), grab (obj), switchon (obj), switchoff (obj), open (obj), close (obj), putin (obj) (obj), putback (obj) (obj)
-#remeber if the key object INSIDE kitchencabinet, you should open the kitchencabinet first or the key object INSIDE room, you should walk to the roomand different id represent different items, so note the id number.
-#remeber you should grab only one item at a time and you can not open a cabinet that has been opened
-      
-#There are some examples:
-      
-#remember the key object locations and states: [["stove(id:150)", "INSIDE", "kitchen(id:50)"], ["chicken(id:332)", "INSIDE", "microwave(id:158)"]["chicken(id:333)", "INSIDE", "microwave(id:158)"]] and stove(id:150)'s states are closed,off,microwave(id:158)'s state is closed, 
-#The task goal: closed_stove(id:150): 1,turnon_stove(id:150): 1,inside_chicken_stove(id:150): 2, 
-def task():
-#The goal means the task is "put two chickens in stove and switch on stove" 
-#1.find the first chicken
-walk('kitchen(id:50)')
-find('microwave(id:158)')
-open('microwave(id:158)')
-grab('chicken(id:332)')
-close('microwave(id:158)')
-#2.put the chicken in stove
-find('stove(id:150)')
-open('stove(id:150)')
-putin('chicken(id:332)', 'stove(id:150)')
-close('stove(id:150)')
-#3.find the second chicken
-walk('kitchen(id:50)')
-find('microwave(id:158)')
-open('microwave(id:158)')
-grab('chicken(id:333)')
-close('microwave(id:158)')
-#4.put the chicken in stove
-open('stove(id:150)')
-putin('chicken(id:333)', 'stove(id:150)')
-close('stove(id:150)')
-We have adopted the prompt construction method from ProgPrompt[6] but do not include interaction with the 
-environment.The planning-only method consists of embedding {task_goal}(he current task goal) and {message
-}(the initial observed state of the environment) directly into the prompt, allowing the agent to generate a 
-complete plan for the task.
-#5.switch on the stove
-switchon('stove(id:150)')
-#6.done
-
-#remember the key object locations and states: [["microwave(id:158)", "INSIDE", "kitchen(id:50)"], ["stove(id:150)", "INSIDE", "kitchen(id:50)"], ["pancake(id:342)", "INSIDE", "livingroom(id:262)"], ["cupcake(id:332)", "INSIDE", "kitchencabinet(id:130)"], ["cupcake(id:333)", "INSIDE", "kitchencabinet(id:126)"], ["cupcake(id:334)", "INSIDE", "kitchencabinet(id:131)"]] and stove(id:150)'s states are closed,off,microwave(id:158)'s states are closed,off,kitchencabinet(id:130)'s state is closed,kitchencabinet(id:126)'s state is closed,kitchencabinet(id:131)'s state is closed, 
-#The task goal: closed_microwave(id:158): 1,turnon_microwave(id:158): 1,closed_stove(id:150): 1,turnon_stove(id:150):1,inside_pancake_microwave(id:158): 1,inside_cupcake_stove(id:150): 1, 
-def task():
-#The goal means the task is "put one pancake in microwave and switch on microwave, put one cupcake in stove and switch on stove".
-#1.find one pancake
-walk('livingroom(id:262)')
-find('pancake(id:342)')
-grab('pancake(id:342)')
-#2.put the pancake in microwave
-find('microwave(id:158)')
-open('microwave(id:158)')
-putin('pancake(id:342)', 'microwave(id:158)')
-close('microwave(id:158)')
-#3.switch on the microwave
-switchon('microwave(id:158)')
-#4.find one cupcake
-walk('kitchen(id:50)')
-find('kitchencabinet(id:130)')
-open('kitchencabinet(id:130)')
-find('cupcake(id:332)')
-grab('cupcake(id:332)')
-close('kitchencabinet(id:130)')
-#5.put the cupcake in stove
-find('stove(id:150)')
-open('stove(id:150)')
-putin('cupcake(id:332)', 'stove(id:150)')
-close('stove(id:150)')
-#6.switch on the stove
-switchon('stove(id:150)')
-#done
-
-#remember the key object locations and states: [["kitchentable(id:123)", "INSIDE", "kitchen(id:50)"], ["poundcake(id:332)", "INSIDE", "stove(id:150)"], ["poundcake(id:348)", "INSIDE", "cabinet(id:222)"], ["milk(id:333)","INSIDE", "kitchencabinet(id:127)"], ["milk(id:334)", "INSIDE", "kitchencabinet(id:128)"], ["milk(id:335)", "INSIDE", "kitchencabinet(id:127)"]] and stove(id:150)'s state is closed,cabinet(id:222)'s states is closed,kitchencabinet(id:127)'s state is closed,kitchencabinet(id:128)'s state is closed,
-#The task goal: on_poundcake_kitchentable(id:123): 1,on_milk_kitchentable(id:123): 1, 
-def task():
-#The goal means the task is "put one poundcake on kitchentable and put one milk on kitchentable" 
-#1.find one poundcake
-walk('kitchen(id:50)')
-find('stove(id:150)')
-open('stove(id:150)')
-find('poundcake(id:332)')
-grab('poundcake(id:332)')
-close('stove(id:150)')
-#2.put the poundcake on the kitchentable
-find('kitchentable(id:123)')
-putback('poundcake(id:332)', 'kitchentable(id:123)')
-#3.find one milk
-find('kitchencabinet(id:127)')
-open('kitchencabinet(id:127)')
-find('milk(id:333)')
-grab('milk(id:333)')
-close('kitchencabinet(id:127)')
-#4.put the milk on the kitchentable
-walk('kitchen(id:50)')
-putback('milk(id:333)', 'kitchentable(id:123)')
-#5.done
-
-#remember the key object locations and states: {message}
-#The task goal: {task_goal}
-def task():
-    </pre>
-  </p>
-</div>
-
-<div style="text-align: center;">Listing 6: An example of planning-only method, full interaction process of the task goal {on_chicken_kitchentable(id:123): 2}</div>
-<div class="textbox">
-    <p class="smaller-font">
-    <pre>
-------------------------------------------------input prompt-------------------------------------------------------------
-from actions import walk (obj), grab (obj), switchon (obj), switchoff (obj), open (obj), close (obj), putin (obj) (obj), putback (obj) (obj)
-
-#remeber if the key object INSIDE kitchencabinet, you should open the kitchencabinet first or the key object INSIDE room, you should walk to the room and different id represent different items, so note the id number.
-#remeber you should grab only one item at a time and you can not open a cabinet that has been opened
-
-#There are some examples:
-
-#remember the key object locations and states: [["stove(id:150)", "INSIDE", "kitchen(id:50)"], ["chicken(id:332)","INSIDE", "microwave(id:158)"]["chicken(id:333)", "INSIDE", "microwave(id:158)"]] and stove(id:150)'s states are closed,off,microwave(id:158)'s state is closed, 
-#The task goal: closed_stove(id:150): 1,turnon_stove(id:150): 1,inside_chicken_stove(id:150): 2, 
-def task():
-#The goal means the task is "put two chickens in stove and switch on stove" 
-#1.find the first chicken
-walk('kitchen(id:50)')
-find('microwave(id:158)')
-open('microwave(id:158)')
-grab('chicken(id:332)')
-close('microwave(id:158)')
-#2.put the chicken in stove
-find('stove(id:150)')
-open('stove(id:150)')
-putin('chicken(id:332)', 'stove(id:150)')
-close('stove(id:150)')
-#3.find the second chicken
-walk('kitchen(id:50)')
-find('microwave(id:158)')
-open('microwave(id:158)')
-grab('chicken(id:333)')
-close('microwave(id:158)')
-#4.put the chicken in stove
-open('stove(id:150)')
-putin('chicken(id:333)', 'stove(id:150)')
-close('stove(id:150)')
-#5.switch on the stove
-switchon('stove(id:150)')
-#6.done
-
-#remember the key object locations and states: [["microwave(id:158)", "INSIDE", "kitchen(id:50)"], ["stove(id:150)", "INSIDE", "kitchen(id:50)"], ["pancake(id:342)", "INSIDE", "livingroom(id:262)"], ["cupcake(id:332)", "INSIDE", "kitchencabinet(id:130)"], ["cupcake(id:333)", "INSIDE", "kitchencabinet(id:126)"], ["cupcake(id:334)", "INSIDE", "kitchencabinet(id:131)"]] and stove(id:150)'s states are closed,off,microwave(id:158)'s states are closed,off,kitchencabinet(id:130)'s state is closed,kitchencabinet(id:126)'s state is closed,kitchencabinet(id:131)'s state is closed, 
-#The task goal: closed_microwave(id:158): 1,turnon_microwave(id:158): 1,closed_stove(id:150): 1,turnon_stove(id:150): 1,inside_pancake_microwave(id:158): 1,inside_cupcake_stove(id:150): 1, 
-def task():
-#The goal means the task is "put one pancake in microwave and switch on microwave, put one cupcake in stove and switch on stove". 
-#1.find one pancake
-walk('livingroom(id:262)')
-find('pancake(id:342)')
-grab('pancake(id:342)')
-#2.put the pancake in microwave
-find('microwave(id:158)')
-open('microwave(id:158)')
-putin('pancake(id:342)', 'microwave(id:158)')
-close('microwave(id:158)')
-#3.switch on the microwave
-switchon('microwave(id:158)')
-#4.find one cupcake
-walk('kitchen(id:50)')
-find('kitchencabinet(id:130)')
-open('kitchencabinet(id:130)')
-find('cupcake(id:332)')
-grab('cupcake(id:332)')
-close('kitchencabinet(id:130)')
-#5.put the cupcake in stove
-find('stove(id:150)')
-open('stove(id:150)')
-putin('cupcake(id:332)', 'stove(id:150)')
-close('stove(id:150)')
-#6.switch on the stove
-switchon('stove(id:150)')
-#done
-
-#remember the key object locations and states: [["kitchentable(id:123)", "INSIDE", "kitchen(id:50)"], ["poundcake(id:332)", "INSIDE", "stove(id:150)"], ["poundcake(id:348)", "INSIDE", "cabinet(id:222)"], ["milk(id:333)", "INSIDE", "kitchencabinet(id:127)"], ["milk(id:334)", "INSIDE", "kitchencabinet(id:128)"], ["milk(id:335)", "INSIDE", "kitchencabinet(id:127)"]] and stove(id:150)'s state is closed,cabinet(id:222)'s states is closed,kitchencabinet(id:127)'s state is closed,kitchencabinet(id:128)'s state is closed, 
-#The task goal: on_poundcake_kitchentable(id:123): 1,on_milk_kitchentable(id:123): 1, 
-def task():
-#The goal means the task is "put one poundcake on kitchentable and put one milk on kitchentable" 
-#1.find one poundcake
-walk('kitchen(id:50)')
-find('stove(id:150)')
-open('stove(id:150)')
-find('poundcake(id:332)')
-grab('poundcake(id:332)')
-close('stove(id:150)')
-#2.put the poundcake on the kitchentable
-find('kitchentable(id:123)')
-putback('poundcake(id:332)', 'kitchentable(id:123)')
-#3.find one milk
-find('kitchencabinet(id:127)')
-open('kitchencabinet(id:127)')
-find('milk(id:333)')
-grab('milk(id:333)')
-close('kitchencabinet(id:127)')
-#4.put the milk on the kitchentable
-walk('kitchen(id:50)')
-putback('milk(id:333)', 'kitchentable(id:123)')
-#5.done
-
-#remember the key object locations and states: [('chicken(id:333)', 'INSIDE', 'fridge(id:149)'), ('chicken(id:334)','INSIDE', 'stove(id:150)'), ('chicken(id:332)', 'INSIDE', 'fridge(id:149)')] and fridge(id:149)'s state is closed,stove(id:150)'s state is closed, 
-#The task goal: on_chicken_kitchentable(id:123): 2, 
-def task():
--------------------------------------------------------end----------------------------------------------------------
-
---------------------------------------------planning-only agent output-------------------------------------------------- 
-#The goal means the task is "put two chickens on kitchentable" 
-#1.find the first chicken in fridge
-walk('kitchen(id:50)')
-find('fridge(id:149)')
-open('fridge(id:149)')
-find('chicken(id:333)')
-grab('chicken(id:333)')
-close('fridge(id:149)')
-#2.put the first chicken on the kitchentable
-find('kitchentable(id:123)')
-putback('chicken(id:333)', 'kitchentable(id:123)')
-#3.find the second chicken in fridge
-find('fridge(id:149)')
-open('fridge(id:149)')
-find('chicken(id:332)')
-grab('chicken(id:332)')
-close('fridge(id:149)')
-#4.put the second chicken on the kitchentable
-find('kitchentable(id:123)')
-putback('chicken(id:332)', 'kitchentable(id:123)')
-#5.done   
-    </pre>
-  </p>
-</div>
-
-#### 2.Implement of Planning-Reasoning
-In tackling complex task planning, various prior works have explored LLMs playing different roles to complete tasks .Each role takes on distinct responsibilities, thereby alleviating the reasoning burden associated with complex tasks.Our planning-reasoning method delegates the entire task planning process to different roles assumed by LLM. Two agents, acting as the planner and reasoner respectively, collaborate in this method. The reasoner is responsible for comprehending the overall task objective and instructs the planner on the execution steps required. The planner, on the other hand, focuses on action planning for individual execution steps.Like other methods, each planner will accept input of the current initial environment information.
-
-<div style="text-align: center;">Listing 7: Full prompt for reasoner, the only input is {task_goal}</div>
-<div class="textbox">
-    <p class="smaller-font">
-    <pre>
-Now you are a task planning assistant, responsible for inferring the execution steps of a task.You should mimic the provided examples and, based on the task objectives,understand the total task goal first, generate the next sub-task. 
-There are some examples:
-      
-Task goal: on_poundcake_kitchentable(id:123): 1,on_milk_kitchentable(id:123): 1, 
-#The goal means "put one poundcake on kitchentable and put one milk on kitchentable" 
-Reasoning task lists:
-#1.put one poundcake on the kitchentable(id:123)
-#2.put one milk on the kitchentable(id:123)
-
-Task goal: closed_dishwasher(id:152): 1,turnon_dishwasher(id:152): 1,inside_chicken_dishwasher(id:152): 2, 
-#The goal means the task is "put two chickens in dishwasher and switch on dishwasher" 
-Reasoning task lists:
-#1.put two chickens in dishwasher and switch on dishwasher(id:152)
-
-Task goal: closed_microwave(id:158): 1,turnon_microwave(id:158): 1,closed_stove(id:150): 1,turnon_stove(id:150): 1,inside_pancake_microwave(id:158): 1,inside_cupcake_stove(id:150): 1, 
-#The goal means the task is "put one pancake in microwave and switch on microwave, put one cupcake in stove and switch on stove". 
-Reasoning task lists:
-#1.put one pancake in microwave(id:158) and switch on microwave(id:158)
-#2.put one cupcake in stove(id:150) and switch on stove(id:150)
-
-Task Goal:closed_stove(id:150): 1,turnon_stove(id:150): 1,inside_poundcake_stove(id:150): 3,on_milk_kitchentable(id:123): 2,
-#The goal means the task is "put three poundcakes in stove and switch on stove, put two milk on kitchentable" 
-Reasoning task lists:
-#1.put three poundcakes in stove(id:150) and switch on stove(id:150)
-#2.put two milk on kitchentable(id:123)
-
-Imitate these examples to generate a step-by-step plan. 
-Task goal: {task_goal}
-Reason task lists:
-    </pre>
-  </p>
-</div>
-
-<div style="text-align: center;">Listing 8: Full prompt for planner.</div>
-<div class="textbox">
-    <p class="smaller-font">
-    <pre>
-Now you are a task planning assistant. You should mimic the examples I provide and generate a sequence of actions based on the target instructions and environmental information.Pay attention to the task objectives and environmental information.And remember if the key object INSIDE kitchencabinet, you should open the kitchencabinet first,or the key object INSIDE room, you should walk to the room,and different id represent different items, so note the id number.Remember you should grab only one item at a time and you can not open a cabinet that has been opened. 
-
-There are some examples:
-
-Now the task is: # put two chickens in stove and switch on stove
-#remember the key object locations and states: [["stove(id:150)", "INSIDE", "kitchen(id:50)"], ["chicken(id:332)", "INSIDE", "microwave(id:158)"]["chicken(id:333)", "INSIDE", "microwave(id:158)"]] and stove(id:150)'s states are closed,off,microwave(id:158)'s state is closed, 
-Planning action lists:
-#1.find the first chicken
-walk('kitchen(id:50)')
-find('microwave(id:158)')
-open('microwave(id:158)')
-grab('chicken(id:332)')
-close('microwave(id:158)')
-#2.put the chicken in stove
-find('stove(id:150)')
-open('stove(id:150)')
-putin('chicken(id:332)', 'stove(id:150)')
-close('stove(id:150)')
-#3.find the second chicken
-walk('kitchen(id:50)')
-find('microwave(id:158)')
-open('microwave(id:158)')
-grab('chicken(id:333)')
-close('microwave(id:158)')
-#4.put the chicken in stove
-open('stove(id:150)')
-putin('chicken(id:333)', 'stove(id:150)')
-close('stove(id:150)')
-#5.switch on the stove
-switchon('stove(id:150)')
-#6.done
-
-Now the task is: # put one poundcake on kitchentable
-#remember the key object locations and states: [["kitchentable(id:123)", "INSIDE", "kitchen(id:50)"], ["poundcake(id:332)", "INSIDE", "stove(id:150)"], ["poundcake(id:348)", "INSIDE", "cabinet(id:222)"], ["milk(id:333)","INSIDE", "kitchencabinet(id:127)"], ["milk(id:334)", "INSIDE", "kitchencabinet(id:128)"], ["milk(id:335)", "INSIDE", "kitchencabinet(id:127)"]] and stove(id:150)'s state is closed,cabinet(id:222)'s states is closed,kitchencabinet(id:127)'s state is closed,kitchencabinet(id:128)'s state is closed, 
-Planning action lists:
-#1.find one poundcake
-walk('kitchen(id:50)')
-find('stove(id:150)')
-open('stove(id:150)')
-find('poundcake(id:332)')
-grab('poundcake(id:332)')
-close('stove(id:150)')
-#2.put the poundcake on the kitchentable
-find('kitchentable(id:123)')
-putback('poundcake(id:332)', 'kitchentable(id:123)')
-
-Now the task is: # put two milk on kitchentable
-#remember the key object locations and states: [('milk(id:332)', 'INSIDE', 'kitchencabinet(id:128)'), ('milk(id:333)','INSIDE', 'kitchencabinet(id:130)')] and kitchencabinet(id:128)'s state is closed,kitchencabinet(id:130)'s state is closed,kitchencabinet(id:126)'s state is closed, 
-Planning action lists:
-#1.find the first milk
-walk('kitchen(id:50)')
-find('kitchencabinet(id:128)')
-open('kitchencabinet(id:128)')
-find('milk(id:332)')
-grab('milk(id:332)')
-close('kitchencabinet(id:128)')
-#2.put the first milk on the kitchentable
-find('kitchentable(id:123)')
-putback('milk(id:332)', 'kitchentable(id:123)')
-#3.find the second milk
-find('kitchencabinet(id:130)')
-open('kitchencabinet(id:130)')
-find('milk(id:333)')
-grab('milk(id:333)')
-close('kitchencabinet(id:130)')
-#4.put the second milk on the kitchentable
-find('kitchentable(id:123)')
-putback('milk(id:333)', 'kitchentable(id:123)')
-
-Now the task is: # switch/turn on microwave
-#remember the key object locations and states: [["milk(id:335)", "INSIDE", "kitchencabinet(id:127)"]] and microwave(id:158)'s state is closed,kitchencabinet(id:127)'s state is closed, 
-Planning action lists:
-#1.switch on the microwave
-switchon('microwave(id:158)')
-
-Imitate these examples to generate an action list. 
-Now the task is: {reasoner_output}
-#remember the key object locations and states:{message}
-Planning action lists:
-    </pre>
-  </p>
-</div>
-
-<div style="text-align: center;">Listing 9: Full interaction process of the task goal {closed_microwave(id:158): 1,turnon_microwave(id:158): 1,on_milk_kitchentable(id:123): 3,inside_pancake_microwave(id:158): 1}</div>
-<div class="textbox">
-    <p class="smaller-font">
-    <pre>
-Task goal: closed_microwave(id:158): 1,turnon_microwave(id:158): 1,on_milk_kitchentable(id:123): 3,inside_pancake_microwave(id:158): 1, 
-      
-Reasoner: 
-Now the task is: # 1. Put one pancake in microwave (id: 158) and switch on microwave (id: 158)
-Scene message: # remember the key object locations and states: [('milk(id:332)', 'INSIDE', 'kitchencabinet(id:129)'), ('milk(id:333)', 'INSIDE', 'kitchencabinet(id:128)'), ('milk(id:335)', 'INSIDE', 'bedroom(id:185)'), ('pancake(id:334)','INSIDE', 'kitchencabinet(id:132)')] and microwave(id:158)'s states are closed,off,kitchencabinet(id:129)'s state is closed,kitchencabinet(id:128)'s state is closed,kitchencabinet(id:132)'s state is closed, 
-      
-Planner:
-#1. Find one pancake
-walk('kitchen(id:50)')
-find('kitchencabinet(id:132)')
-open('kitchencabinet(id:132)')
-find('pancake(id:334)')
-grab('pancake(id:334)')
-close('kitchencabinet(id:132)')
-#2. Put the pancake in the microwave
-find('microwave(id:158)')
-open('microwave(id:158)')
-putin('pancake(id:334)', 'microwave(id:158)')
-close('microwave(id:158)')
-#3. Switch on the microwave
-switchon('microwave(id:158)')
-
-Reasoner: 
-Now the task is: # 2. Put three milk on kitchentable (id: 123)
-Scene message: # remember the key object locations and states: [('milk(id:332)', 'INSIDE', 'kitchencabinet(id:129)'), ('milk(id:333)', 'INSIDE', 'kitchencabinet(id:128)'), ('milk(id:335)', 'INSIDE', 'bedroom(id:185)')] and microwave(id:158)'s states are closed,on,kitchencabinet(id:129)'s state is closed,kitchencabinet(id:128)'s state is closed, 
-
-Planner:
-#find the first milk
-walk('kitchen(id:50)')
-find('kitchencabinet(id:129)')
-open('kitchencabinet(id:129)')
-find('milk(id:332)')
-grab('milk(id:332)')
-close('kitchencabinet(id:129)')
-#put the first milk on the kitchentable
-find('kitchentable(id:123)')
-putback('milk(id:332)', 'kitchentable(id:123)')
-#find the second milk
-find('kitchencabinet(id:128)')
-open('kitchencabinet(id:128)')
-find('milk(id:333)')
-grab('milk(id:333)')
-close('kitchencabinet(id:128)')
-#put the second milk on the kitchentable
-find('kitchentable(id:123)')
-putback('milk(id:333)', 'kitchentable(id:123)')
-#find the third milk
-walk('kitchen(id:50)')
-find('bedroom(id:185)')
-find('milk(id:335)')
-grab('milk(id:335)')
-#put the third milk on the kitchentable
-find('kitchentable(id:123)')
-putback('milk(id:335)', 'kitchentable(id:123)')  
-    </pre>
-  </p>
-</div>
